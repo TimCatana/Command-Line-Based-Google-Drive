@@ -24,7 +24,7 @@ def createFile():
 	fType = input('Insert file type): ')
 	
 	while checkfType(fType) == False:
-		fType = input('Insert a valid file type(see "file types" document for examples): ')
+		fType = input('Insert a valid file type: ')
 	file = drive.CreateFile({'title': fName, "mimeType": "application/vnd.google-apps.{}".format(fType)})
 	file.Upload()
 	
