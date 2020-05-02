@@ -59,7 +59,7 @@ def printCommands():
 # List all files with a specific file type
 def listSpecFile():
 	print('file types: "folder", "document", "presentation", "drawing", "spreadsheet", "form", "map", "site", "script", "jam"')
-	fType = input('Insert file type (see "file types" document for examples): ')
+	fType = input('Insert file type: ')
 	while checkfType(fType) == False:
 		fType = input('Insert a valid file type: ')
 	
@@ -68,7 +68,7 @@ def listSpecFile():
 	queryFileType('root', fType)
 	print('--------------------------------------------------------\n')
 	
-# Initialize a csv file at the beginning of the program
+#  query for and list all files of a specific file type 
 def queryFileType(ID, fType): # ID = 'root' when ralled 
 	folderNames = []
 	folderIDs = []
