@@ -1,0 +1,25 @@
+file1 = drive.CreateFile() -- Creates a file but does not upload to drive
+
+file.SetContentString('content in file') -- set the contents of a file
+file.GetContentString('content in file') -- get the contents of a file
+
+file.SetContentFile('name of file') -- set the name of a file
+file.GetContentFile('name of file') -- get the name of a file
+
+file.Upload() -- Upload a file to drive
+
+file.Trash() -- Move a file to trash
+
+file.UnTrash() -- Move file out of trash
+
+file.Delete() -- Permanantly deletes a file
+
+permission = file1.InsertPermission({ 'type': 'anyone', 'role': 'owner'}) -- Insert the permission (multiple possible arguments)
+
+permissions = file1.GetPermissions() -- Get's the file permissions
+
+file1.FetchMetadata() -- Fetches a files metadata (see 'file objects metadata' file for all metadata arguments)
+
+file1.DeletePermission(permission_id) -- Deletes a permission
+
+file_list = drive.ListFile({'q': "'root' in parents and trashed=false"}).GetList() -- get a list of files

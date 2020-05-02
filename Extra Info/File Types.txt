@@ -1,0 +1,15 @@
+Below are the types of files that can be created:
+----------------------------------------------------
+folder - creates a new folder 
+document - Creates a new "Google Doc"
+presentation - Creates a new "Google Slide"
+drawing - Creates a new "Google Drawing"
+spreadsheet - Creates a new "Google Sheet"
+form - Creates a new "Google Form"
+map - Creates a new "Google My Map"
+site - Creates a new "Google Site"
+script - Creates a new "Google Apps Script"
+jam - Creates a new "Google Jamboard"
+
+
+

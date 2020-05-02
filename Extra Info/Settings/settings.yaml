@@ -1,0 +1,40 @@
+# all possible settings functions
+
+client_config_backend: {{str}}
+client_config_file: {{str}}
+client_config:
+  client_id: {{str}}
+  client_secret: {{str}}
+  auth_uri: {{str}}
+  token_uri: {{str}}
+  redirect_uri: {{str}}
+  revoke_uri: {{str}}
+
+save_credentials: {{bool}}
+save_credentials_backend: {{str}}
+save_credentials_file: {{str}}
+
+get_refresh_token: {{bool}}
+
+oauth_scope: {{list of str}}
+
+
+
+
+#Sample
+#-----------
+
+#client_config_backend: settings
+#client_config:
+#  client_id: 9637341109347.apps.googleusercontent.com
+#  client_secret: psDskOoWr1P602PXRTHi
+
+#save_credentials: True
+#save_credentials_backend: file
+#save_credentials_file: credentials.json
+
+#get_refresh_token: True
+
+#oauth_scope:
+#  - https://www.googleapis.com/auth/drive.file
+#  - https://www.googleapis.com/auth/drive.install
